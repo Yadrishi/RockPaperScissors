@@ -1,0 +1,29 @@
+import java.util.Random;
+import java.util.Scanner;
+public class Main{
+
+    public static String generateComputerChoice( Random  random){
+
+        int wordNumber;
+       
+        wordNumber = random.nextInt( 3 ) + 1;
+        String computerChoice = "";
+
+        
+        if( wordNumber == 1 )
+        {
+            computerChoice = "rock";
+        }
+        else if( wordNumber == 2 )
+        {
+            computerChoice = "paper";
+        }
+        else if( wordNumber == 3 )
+        {
+            computerChoice = "scissors";
+        }
+
+        System.out.println( "\nThe Computer already made it's choice" );
+        return computerChoice;
+
+    }
