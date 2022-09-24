@@ -51,3 +51,28 @@ public static void showMenu(){
         String rockCustomMessage = "The rock smashes the scissor";
         String scissorsCustomMessage = "Scissors cuts paper";
         String paperCustomMessage = "Paper wraps rock";
+        if( computerChoice.equals( "rock" ) && userChoice.equalsIgnoreCase( "scissors" ) ){
+            winner = "Computer";
+            customMessage = rockCustomMessage;
+        }else if( userChoice.equalsIgnoreCase( "rock" ) && computerChoice.equals( "scissors" ) ){
+            winner = "User";
+            customMessage = rockCustomMessage;
+        }
+
+        if( computerChoice.equals( "scissors" ) && userChoice.equalsIgnoreCase( "paper" ) ){
+            winner = "Computer";
+            customMessage = scissorsCustomMessage;
+        }
+        else if( userChoice.equalsIgnoreCase( "scissors" ) && computerChoice.equals( "paper" ) ){
+            winner = "User";
+            customMessage = scissorsCustomMessage;
+        }
+
+        if( computerChoice.equals( "paper" ) && userChoice.equalsIgnoreCase( "rock" ) ){
+            winner = "Computer";
+            customMessage = scissorsCustomMessage;
+        }else if( userChoice.equalsIgnoreCase( "paper" ) && computerChoice.equals( "rock" ) ){
+            winner = "User";
+            customMessage = paperCustomMessage;
+        }
+
