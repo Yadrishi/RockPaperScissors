@@ -27,3 +27,27 @@ public class Main{
         return computerChoice;
 
     }
+public static void showMenu(){
+
+        System.out.println( "Options to choose from :\n1.Rock\n2.Paper\n3.Scissors" );
+
+    }
+
+    public static String getUserChoice( Scanner scanner ){
+
+        String userWordChoice = "";
+        System.out.print( "\nPlease make yours : " );
+        userWordChoice = scanner.nextLine();
+        return userWordChoice;
+
+    }
+
+    public static String chooseWinner( String computerChoice, String userChoice ){
+
+        String winner = "No Winner";
+        String customMessage = "Both choose same";
+        String finalMessage = "";
+
+        String rockCustomMessage = "The rock smashes the scissor";
+        String scissorsCustomMessage = "Scissors cuts paper";
+        String paperCustomMessage = "Paper wraps rock";
